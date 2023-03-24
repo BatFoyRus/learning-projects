@@ -22,6 +22,7 @@
     z-index: 200
     text-align: center
     cursor: pointer
+    box-shadow: $box-shadow-03
   &__nav
     height: 100vh
     position: fixed
@@ -66,10 +67,10 @@
 
   &__icon
     position: relative
-    margin-top: 38px
+    margin-top: 3.8rem
     &, &::before, &::after
-      width: 30px
-      height: 2px
+      width: 3rem
+      height: .2rem
       background: $color-black
       display: inline-block
     &::before, &::after
@@ -78,13 +79,13 @@
       left: 0
       transition: all .2s
     &::before
-      top: -8px
+      top: -.8rem
     &::after
-      top: 8px
+      top: .8rem
   &__button:hover &__icon::before
-    top: -10px
+    top: -1rem
   &__button:hover &__icon::after
-    top: 10px
+    top: 1rem
   &__toggle:checked + &__button &__icon::before
     top: 0
     transform: rotate(135deg)
