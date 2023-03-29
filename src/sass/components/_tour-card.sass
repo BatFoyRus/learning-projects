@@ -3,7 +3,7 @@
   perspective: 150rem
   -moz-perspective: 150rem
   position: relative
-  @include respond(tab-port)
+  @media only screen and (max-width: 900px), (hover: none)
     height: auto
   &__side
     height: 50rem
@@ -17,17 +17,17 @@
     box-shadow: $box-shadow-03
     border-radius: .5rem
     overflow: hidden
-    @include respond(tab-port)
+    @media only screen and (max-width: 900px), (hover: none)
       height: auto
       position: relative
     &_front
-      @include respond(tab-port)
+      @media only screen and (max-width: 900px), (hover: none)
         padding-bottom: 13rem
     &_back
       background: green 
       transform: rotateY(180deg)
       background: linear-gradient(120deg, $color-brown-light, $color-brown-dark)
-      @include respond(tab-port)
+      @media only screen and (max-width: 900px), (hover: none)
         transform: rotateY(0)
         padding: 5rem
         padding-top: 12rem
