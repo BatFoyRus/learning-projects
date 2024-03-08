@@ -1,0 +1,180 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: 'Muller', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+}
+
+/* Header */
+
+.header {
+  margin-top: 30px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header-top-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 40px;
+}
+
+.header-tel {
+  color: #666;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.header-link_mod {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(3px);
+}
+
+.header-icon_arrow {
+  background-image: url(../icons/arrow.svg);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 0;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+
+
+/* Hero */
+
+.section-heading,
+.section-hero-text {
+  /* font-size: 40px; */
+}
+
+.section-hero-list {
+  display: flex;
+}
+
+/* Service */
+
+.section-service-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-service-item {
+  flex: 1 1 50%;
+}
+
+/* Features */
+
+.section-features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-features-item {
+  flex: 1 1 25%;
+}
+
+/* Room */
+
+.section-room-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-room-item {
+  flex: 1 1 33.33%;
+}
