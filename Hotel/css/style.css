@@ -40,6 +40,7 @@
 
 a {
   text-decoration: none;
+  color: #cc9933;
 }
 
 ul {
@@ -55,6 +56,12 @@ img {
 html {
   font-family: 'Muller', sans-serif;
   font-size: 16px;
+  background: #e5e5e5;
+}
+
+
+section{
+  margin-bottom: 70px;
 }
 
 .container {
@@ -76,6 +83,7 @@ html {
 
 .header {
   margin-top: 30px;
+  margin-bottom: 70px;
 }
 
 .header-top {
@@ -91,6 +99,10 @@ html {
 
 .header-logo {
   margin-right: 40px;
+}
+
+.header-logo img {  
+  border-radius: 15px;
 }
 
 .header-tel {
@@ -122,7 +134,18 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 27px 0;
+  height: 70px;
+  padding: 0 45px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.header-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-header a{  
+  color: #666;
 }
 
 .nav-list {
@@ -134,16 +157,103 @@ html {
 }
 
 
-
 /* Hero */
 
-.section-heading,
-.section-hero-text {
-  /* font-size: 40px; */
+.section-heading {
+  margin-bottom: 20px;
+  margin-top: 0;
+  margin-left: 40px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 .section-hero-list {
   display: flex;
+}
+
+.section-hero-left,
+.section-hero-right {
+  flex: 1 1 50%;
+}
+
+.section-hero-left .section-hero-item:not(:last-child) {
+  margin-bottom: 24px;  
+  /* background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%); */
+}
+
+.section-hero-item {
+  position: relative;
+  min-height: 260px;
+  margin-right: 23px;
+}
+
+.section-hero-item--big {
+  min-height: 540px;
+}
+
+.section-hero-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.section-hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;  
+  padding: 40px 45px;
+  min-height: 100%;
+  z-index: 1;
+  color: #fff;
+}
+
+.section-hero-text {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.section-hero-price {
+  margin-bottom: 47px;
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.section-hero-link {
+  display: block;
+}
+
+.section-hero-right {
+  margin: 0;
+}
+
+.section-hero-right .section-hero-info {
+  transform: translateY(50%);
+}
+
+.section-hero-right .section-hero-text {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.section-hero-right .section-hero-price {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/* About Us */
+
+.section-about-text {
+  width: 77%;
+  line-height: 32px;
 }
 
 /* Service */
