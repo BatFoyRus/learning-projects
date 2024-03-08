@@ -59,7 +59,6 @@ html {
   background: #e5e5e5;
 }
 
-
 section{
   margin-bottom: 70px;
 }
@@ -77,6 +76,16 @@ section{
   padding: 13px 20px;
   border: 1px solid #cc9933;
   border-radius: 10px;
+}
+
+.section-hero-link,
+.section-service-link {
+  padding-right: 20px;
+  width: fit-content;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../icons/small-arrow.svg');
 }
 
 /* Header */
@@ -264,8 +273,44 @@ section{
 }
 
 .section-service-item {
-  flex: 1 1 50%;
+  position: relative;
+  flex: 1 1 calc(50% - 24px);
+  height: 330px;
+  background: #fff;
+  border-radius: 15px;
 }
+
+.section-service-item:not(:nth-child(even)) {
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.section-service-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 26px;
+}
+
+.section-service-info {
+  width: 77%;  
+  padding: 0 0 35px 45px;
+  z-index: 1;
+}
+
+.section-service-link {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 500;
+  background-image: url('../icons/small-arrow.svg');
+}
+
+.section-service-desc {
+  margin-top: 0;
+  line-height: 32px;
+}
+
+
 
 /* Features */
 
@@ -275,8 +320,64 @@ section{
 }
 
 .section-features-item {
-  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 calc(25% - 22px);
+  min-height: 276px;
+  padding: 40px 43px 32px;
+  margin-bottom: 22px;
+  background-color: #fff;
+  border-radius: 15px;
 }
+
+.section-features-icon {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 66px;
+  height: 66px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-features-icon_bathtub {
+  background-image: url('../icons/bathtub.svg');
+}
+.section-features-icon_hanger {
+  background-image: url('../icons/hanger.svg');
+}
+.section-features-icon_heating {
+  background-image: url('../icons/heating.svg');
+}
+.section-features-icon_hotel-key {
+  background-image: url('../icons/hotel-key.svg');
+}
+.section-features-icon_parking {
+  background-image: url('../icons/parking.svg');
+}
+.section-features-icon_reception {
+  background-image: url('../icons/reception.svg');
+}
+.section-features-icon_security-box {
+  background-image: url('../icons/security-box.svg');
+}
+.section-features-icon_swimming-pool {
+  background-image: url('../icons/swimming-pool.svg');
+}
+
+
+.section-features-item:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
+
+.section-features-desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 32px;
+}
+
+
 
 /* Room */
 
