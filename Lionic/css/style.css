@@ -48,23 +48,24 @@ html {
 }
 
 .container {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+  max-width: 1200px;
 }
 
 .btn {
   display: inline-block;
   padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
   font-size: 12px;
   line-height: 1;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
   background-color: #3172b9;
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -95,8 +96,8 @@ html {
 /* Header */
 
 .header {
-  height: 110px;
   border-bottom: 1px solid #e4e4e4;
+  height: 110px;
 }
 
 .header-container {
@@ -172,19 +173,19 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin-top: 10px;
   font-size: 11px;
   line-height: 1;
   text-transform: uppercase;
-  text-align: center;
   color: #787878;
 }
 
 .section-hero-icon {
   display: inline-block;
+  margin-right: 10px;
   width: 13px;
   height: 17px;
-  margin-right: 10px;
   background-size: contain;
   transform: translateY(-1px);
 }
@@ -211,10 +212,10 @@ html {
 }
 
 .section-do-item {
-  flex: 1 1 25%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  flex: 1 1 25%;
   padding: 60px 30px;
   border: 1px solid #e4e4e4;
   border-radius: 5px;
@@ -228,8 +229,8 @@ html {
   margin-bottom: 18px;
   font-size: 20px;
   line-height: 1;
-  color: #1c1c1c;
   font-weight: 600;
+  color: #1c1c1c;
 }
 
 .section-do-icon {
@@ -237,11 +238,11 @@ html {
 }
 
 .section-do-description {
+  text-align: center;
   margin-top: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 300;
-  text-align: center;
   color: #787878;
 }
 
@@ -262,10 +263,10 @@ html {
 }
 
 .section-clients-item {
-  flex: 1 1 33.33%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex: 1 1 33.33%;
+  flex-direction: column;
   padding: 50px 35px 30px;
   border: 1px solid #e4e4e4;
   border-radius: 5px;
@@ -292,9 +293,9 @@ html {
 }
 
 .section-clients-avatar {
+  margin-right: 15px;
   width: 60px;
   height: 60px;
-  margin-right: 15px;
   border: 2px solid #3172b9;
   border-radius: 50%;
 }
@@ -335,8 +336,8 @@ html {
 
 .section-contacts-icon {
   display: block;
-  height: 26px;
   margin-bottom: 25px;
+  height: 26px;
   background-repeat: no-repeat;
   background-position: center left;
   background-size: auto 100%;
@@ -372,6 +373,42 @@ html {
 
 .section-contacts-link {
   color: #787878
+}
+
+/* Form */
+
+.form-title {
+  text-align: center;
+}
+
+.form-description {
+  text-align: center;
+  font-style: 16px;
+  line-height: 21px;
+  color: #787878;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 58px;
+}
+
+.input,
+.btn-submit {
+  flex: 0 0 calc(25% - 15px);
+  height: 60px;
+  border-radius: 30px;
+}
+
+.input {
+  padding: 0 30px;
+  border: 1px solid #dadada;
+  border-radius: 30px;
+}
+
+.input::placeholder {
+  color: #787878;
 }
 
 /* Footer */
