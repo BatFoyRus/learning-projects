@@ -401,29 +401,45 @@
 
     <section class="section-feedback">
       <div class="container feedback-container">
-        <h2 class="section-heading">Хочу тур</h2>
+        <h2 class="section-heading heading-feedback">Хочу тур</h2>
         <div class="section-feedback-info">
           <form class="section-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST"
             class="form">
             <div class="section-form-item">
-              <label for="cityout">Город вылета</label>
-              <input type="text" name="cityout" placeholder="Город" class="input" id="cityout">
+              <label class="section-form-label" for="cityout">Город вылета</label>
+              <select name="cityout" placeholder="Город" class="section-form-input" id="cityout">
+                <option value="MOS">Москва</option>
+                <option value="SPB">Санкт-Петербург</option>
+                <option value="KZN">Казань</option>
+                <option value="SOC">Сочи</option>
+                <option value="VVK">Владивосток</option>
+                <option value="KND">Калининград</option>
+              </select>
             </div>
             <div class="section-form-item">
-              <label for="country">Страна</label>
-              <input type="email" name="country" placeholder="Страна" class="input" id="country">
+              <label class="section-form-label" for="country">Страна</label>
+              <select name="country" placeholder="Страна" class="section-form-input" id="country">
+                <option value="RUS">Россия</option>
+                <option value="AST">Австралия</option>
+                <option value="CHN">Китай</option>
+                <option value="GER">Германия</option>
+                <option value="JAP">Япония</option>
+                <option value="USA">США</option>
+              </select>
             </div>
             <div class="section-form-item">
-              <label for="date">Дата прибытия</label>
-              <input type="date" name="date" placeholder="Дата" class="input" id="date">
+              <label class="section-form-label" for="date">Дата прибытия</label>
+              <input type="date" name="date" placeholder="Дата" class="section-form-input" id="date">
             </div>
             <div class="section-form-item">
-              <label for="nights">Ночей</label>
-              <input type="number" name="nights" placeholder="Кол-во дней" id="nights">
+              <label class="section-form-label" for="nights">Ночей</label>
+              <input type="number" name="nights" placeholder="Кол-во дней"
+                class="section-form-input section-form-input_border" id="nights">
             </div>
             <div class="section-form-item">
-              <label for="people">Туристы</label>
-              <input type="number" name="people" placeholder="Кол-во человек" id="people">
+              <label class="section-form-label" for="people">Туристы</label>
+              <input required type="number" name="people" placeholder="Кол-во человек"
+                class="section-form-input section-form-input_border" id="people">
             </div>
             <button type="sumbit" class="btn btn-submit">
               Найти
@@ -432,7 +448,84 @@
         </div>
       </div>
     </section>
+
+    <section class="section-contacts">
+      <div class="container">
+        <h2 class="section-heading">Контакты</h2>
+        <div class="section-contacts-block">
+          <div class="section-contacts-left">
+            <div class="section-contacts-list">
+              <div class="section-contacts-item">
+                <h3 class="section-contacts-heading">Адрес</h3>
+                <span class="section-contacts-info">Москва, улица Юности, дом 5 строение 4, офис 2</span>
+              </div>
+              <div class="section-contacts-item">
+                <h3 class="section-contacts-heading">Телефоны</h3>
+                <span class="section-contacts-info">
+                  <a class="section-contacts-link" href="tel:+79876543210">+7 (987) 654-32-10</a>
+                  <br>
+                  <a class="section-contacts-link" href="tel:+70123456789">+7 (012) 345-67-89</a>
+                </span>
+              </div>
+              <div class="section-contacts-item">
+                <h3 class="section-contacts-heading">Email</h3>
+                <span class="section-contacts-info section-contacts-info_mod">
+                  <a href="mailto:example@mail.com">example@mail.com</a>
+                  <p class="section-contacts-desc">по вопросам бронирования</p>
+                  <a href="mailto:mysite@mail.com">mysite@mail.com</a>
+                  <p class="section-contacts-desc">по вопросам сотрудничества</p>
+                </span>
+              </div>
+              <div class="section-contacts-item">
+                <h3 class="section-contacts-heading">График</h3>
+                <span class="section-contacts-info">
+                  <p>Понедельник-пятница,</p>
+                  <p>с 10:00 до 19:00</p>
+                </span>
+              </div>
+            </div>
+            <button class="btn btn-submit btn-contacts">
+              Построить маршрут
+            </button>
+          </div>
+          <div class="section-contacts-right">
+            <img class="section-contacts-img" src="./img/contacts.jpg" alt="Контакты">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <p class="mb-30">© 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»</p>
+            <p class="mb-30">Представленная на сайте информация носит справочный характер и не является публичной
+              офертой</p>
+            <a href="#">Пользовательское соглашение</a>
+          </li>
+          <li class="footer-item">
+            <address class="footer-item-adress">11710, улица Юности, дом 5 строение 4, офис 2</address>
+            <div class="footer-link-list">
+              <a href="tel:+79876543210">+7 (987) 654-32-10</a>
+              <a href="tel:+70123456789">+7 (012) 345-67-89</a>
+            </div>
+            <div class="footer-link-list">
+              <a href="mailto:example@mail.com">example@mail.com</a>
+              <a href="mailto:mysite@mail.com">mysite@mail.com</a>
+            </div>
+          </li>
+          <img class="footer-img" src="./icons/icon-wb.svg" alt="Логотип">
+          <li class="footer-item">
+            <a href="#"><span class="footer-item-icon footer-item-icon_1"></span></a>
+            <a target="_blank" href="https://ok.ru"><span class="footer-item-icon footer-item-icon_2"></span></a>
+            <a target="_blank" href="https://vk.com"><span class="footer-item-icon footer-item-icon_3"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
